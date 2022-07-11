@@ -17,12 +17,13 @@ use App\Http\Controllers\UserController;
 
 Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
-    Route::post('/create', [UserController::class , 'store']);
+    
 });
 
 
 
 
 Route::get('/get', [UserController::class , 'index']);
+Route::post('/create', [UserController::class , 'store']);
 Route::get('/get/{id}', [UserController::class , 'show']);
 
