@@ -1,0 +1,15 @@
+# GET http://127.0.0.1:8000/api/test
+
+#  GET http://127.0.0.1:8000/api/test/1
+
+
+
+POST http://127.0.0.1:8000/api/create HTTP/1.1
+content-type:application/json
+
+
+{
+    "name": "rodny sibugan",
+    "email": "rodny@gmail.com",
+    "ip_address": "192.567.676"
+}
